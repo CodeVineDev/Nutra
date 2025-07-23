@@ -6,13 +6,14 @@
   /* (Soft coral — for buttons or highlights) */
   --Background: #f4f4f4;
   /* (Light grey — clean and subtle) */
-  --Text: #222222;
+  --Text-d: #454545;
   /* (Dark) */
-  --Text: #666666; /* (Light) */
+  --Text-l: #666666; /* (Light) */
   --poppins: "Poppins", sans-serif;
   --figtree: "Figtree", sans-serif;
 }
 #mobileMenu.open {
   opacity: 1;
+  color: #666666;
   visibility: visible;
 }
