@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="relative flex items-center justify-between border border-b-gray-200 bg-white px-8 sm:px-10 py-6">
+    <nav class="relative flex items-center justify-between border border-b-gray-200 bg-white px-8 py-6 sm:px-10">
         <div class="flex items-center justify-between gap-2">
             <iconify-icon class="text-(--primary)" icon="material-symbols:menstrual-health" width="26"
                 height="26"></iconify-icon>
@@ -82,9 +82,11 @@
         </div>
     </nav>
     <main class="[font-family:var(--figtree)]">
-        <section class="rounded-2xl w-[min(97%,1200px)] border border-gray-200 m-auto mt-8 h-screen bg-[url('../media/nurse-2-image.webp')] bg-cover bg-center">
-            <div class="p-8">
-                <div class="border mt-24 sm:mt-8 border-gray-200 shadow-sm shadow-gray-200 mb-8 flex w-max items-center justify-center gap-2 rounded-3xl bg-white px-3 py-1">
+        <section
+            class="m-auto mt-6 h-180 sm:h-140 w-[min(97%,1210px)] rounded-2xl border border-gray-200 bg-[url('../media/nurse-2-image.webp')] bg-cover bg-center">
+            <div class="p-6 sm:p-8">
+                <div
+                    class="mt-15 mb-8 flex w-max items-center justify-center gap-2 rounded-3xl border border-gray-200 bg-white px-3 py-1 shadow-sm shadow-gray-200 sm:mt-8">
                     <div class="flex h-8 w-8 items-center justify-center rounded-[50%] bg-sky-50">
                         <iconify-icon class="text-2xl text-(--primary)" icon="ic:round-star" width="25"
                             height="25"></iconify-icon>
@@ -92,15 +94,103 @@
                     <p class="font-medium">4.9 (600 review)</p>
                 </div>
                 <h1
-                    class="mb-8 text-[clamp(50px,5vw,60px)] font-bold leading-[1.2] text-(--Text-d) [font-family:var(--poppins)]">
-                    Your Health, <br> Our Priority</h1>
-                <p class="mb-8 w-[min(100%,450px)] text-(--Text-d) text-[20px]">
+                    class="mb-8 [font-family:var(--poppins)] text-[clamp(50px,5vw,60px)] leading-[1.2] font-bold text-(--Text-d)">
+                    Your Health, <br />
+                    Our Priority
+                </h1>
+                <p class="mb-8 w-[min(100%,450px)] text-[20px] text-(--Text-d)">
                     Trusted care with advanced solutions to support your health and
                     wellbeing.
                 </p>
                 <div>
-                    <button class="rounded-3xl bg-(--primary) mr-4"><a href="#" class="text-white font-bold flex w-full h-full py-3 px-6">Book Appointment</a></button>
-                    <button class="rounded-3xl bg-white shadow-sm shadow-gray-200 border border-gray-200"><a href="#" class="font-bold text-(--Text-d) flex w-full h-full py-3 px-6">Learn More</a></button>
+                    <button class="mr-4 mb-4 rounded-3xl bg-(--primary)">
+                        <a href="#" class="flex h-full w-full px-6 py-3 font-bold text-white">Book Appointment</a>
+                    </button>
+                    <button class="rounded-3xl border border-gray-200 bg-white shadow-sm shadow-gray-200">
+                        <a href="#" class="flex h-full w-full px-13 py-3 font-bold text-(--Text-d)">Learn More</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="pt-22 w-[min(97%,1210px)] m-auto">
+            <div>
+                <div class="border m-auto mb-10 border-(--primary) text-(--primary) py-1 px-2 rounded-2xl w-max">Core
+                    Services</div>
+            </div>
+            <h2
+                class="mb-10 text-center [font-family:var(--poppins)] text-[clamp(35px,5vw,45px)] leading-[1.2] font-bold text-(--Text-d)">
+                Healthcare Services</h2>
+            <div
+                class="w-[min(100%,1150px)] m-auto grid grid-cols-[repeat(auto-fit,_minmax(min(100%,_380px),1fr))] gap-8">
+                <div class="border border-gray-200 rounded-2xl">
+                    <div class="flex border-b border-b-gray-200 p-4">
+                        <div>
+                            <h4 class="text-xl sm:text-2xl text-(--Text-d) mb-4 font-bold">Chronic Disease Management
+                            </h4>
+                            <p class="text-[16px] text-(--Text-d) sm:text-[18px]">Care plans to manage chronic
+                                conditions, improving quality of life and health.</p>
+                        </div>
+                        <div>
+                            <div class="border border-gray-200 rounded-[50%] w-max flex items-center justify-center p-4">
+                                <iconify-icon class="text-(--primary)" icon="radix-icons:arrow-top-right" width="25" height="25"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <img class="w-full rounded-2xl aspect-[7/5]" src="media/patient-image-2.webp" alt="patient image">
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-2xl">
+                    <div class="flex border-b border-b-gray-200 p-4">
+                        <div>
+                            <h4 class="text-xl sm:text-2xl text-(--Text-d) mb-4 font-bold">Pediatric Healthcare</h4>
+                            <p class="text-[16px] text-(--Text-d) sm:text-[18px]">Comprehensive care for children,
+                                focusing on growth, wellness, and development.</p>
+                        </div>
+                        <div>
+                            <div class="border border-gray-200 rounded-[50%] w-max flex items-center justify-center p-4">
+                                <iconify-icon class="text-(--primary)" icon="radix-icons:arrow-top-right" width="25" height="25"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <img class="w-full rounded-2xl aspect-[7/5]" src="media/patient-image-1.webp" alt="patient image">
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-2xl">
+                    <div class="flex border-b border-b-gray-200 p-4">
+                        <div>
+                            <h4 class="text-xl sm:text-2xl text-(--Text-d) mb-4 font-bold">Medical Consultations</h4>
+                            <p class="text-[16px] text-(--Text-d) sm:text-[18px]">Expert consultations for health
+                                concerns, offering personalized diagnoses.</p>
+                        </div>
+                        <div>
+                            <div class="border border-gray-200 rounded-[50%] w-max flex items-center justify-center p-4">
+                                <iconify-icon class="text-(--primary)" icon="radix-icons:arrow-top-right" width="25" height="25"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <img class="w-full rounded-2xl aspect-[7/5]" src="media/patient-image-4.webp" alt="patient image">
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-2xl">
+                    <div class="flex border-b border-b-gray-200 p-4">
+                        <div>
+                            <h4 class="text-xl sm:text-2xl text-(--Text-d) mb-4 font-bold">Preventive Care & Screenings
+                            </h4>
+                            <p class="text-[16px] text-(--Text-d) sm:text-[18px]">Regular checkups and screenings help
+                                detect issues early for better health.</p>
+                        </div>
+                        <div>
+                            <div class="border border-gray-200 rounded-[50%] w-max flex items-center justify-center p-4">
+                                <iconify-icon class="text-(--primary)" icon="radix-icons:arrow-top-right" width="25" height="25"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <img class="w-full rounded-2xl aspect-[7/5]" src="media/patient-image-3.webp" alt="patient image">
+                    </div>
                 </div>
             </div>
         </section>
