@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --primary: #4f46e5;
+  --accent: #e76f51;
+  /* (Soft coral — for buttons or highlights) */
+  --Background: #f4f4f4;
+  /* (Light grey — clean and subtle) */
+  --Text: #222222;
+  /* (Dark) */
+  --Text: #666666; /* (Light) */
+  --poppins: "Poppins", sans-serif;
+  --figtree: "Figtree", sans-serif;
+}
+#mobileMenu.open {
+  opacity: 1;
+  visibility: visible;
+}

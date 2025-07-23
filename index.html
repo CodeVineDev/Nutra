@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="src/./style.css" rel="stylesheet" />
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body class="">
+    <nav class="flex relative items-center justify-between border border-b-gray-300 px-8 py-6">
+        <div class="flex items-center justify-between gap-2">
+            <iconify-icon class="text-(--primary)" icon="material-symbols:menstrual-health" width="26"
+                height="26"></iconify-icon>
+            <p class="text-2xl font-bold [font-family:var(--poppins)]">Nutra</p>
+        </div>
+        <div class="sm:block hidden">
+            <ul
+                class="[font-family:var(--figtree)] flex items-center justify-between gap-4 transition-all duration-200 ease-in-out">
+                <li
+                    class="cursor-pointer after:transition-all duration-200 ease-in-out sm:relative sm:after:absolute sm:after:top-full sm:after:left-0 sm:after:h-[1px] sm:after:w-0 sm:after:rounded-[4px] sm:after:bg-(--primary) sm:after:content-[''] sm:hover:after:w-full">
+                    <a href="#" class="text-[16px]">Home</a>
+                </li>
+                <li
+                    class="cursor-pointer after:transition-all duration-200 ease-in-out sm:relative sm:after:absolute sm:after:top-full sm:after:left-0 sm:after:h-[1px] sm:after:w-0 sm:after:rounded-[4px] sm:after:bg-(--primary) sm:after:content-[''] sm:hover:after:w-full">
+                    <a href="#" class="text-[16px]">About</a>
+                </li>
+                <li
+                    class="cursor-pointer after:transition-all duration-200 ease-in-out sm:relative sm:after:absolute sm:after:top-full sm:after:left-0 sm:after:h-[1px] sm:after:w-0 sm:after:rounded-[4px] sm:after:bg-(--primary) sm:after:content-[''] sm:hover:after:w-full">
+                    <a href="#" class="text-[16px]">Services</a>
+                </li>
+                <li
+                    class="cursor-pointer after:transition-all duration-200 ease-in-out sm:relative sm:after:absolute sm:after:top-full sm:after:left-0 sm:after:h-[1px] sm:after:w-0 sm:after:rounded-[4px] sm:after:bg-(--primary) sm:after:content-[''] sm:hover:after:w-full">
+                    <a href="#" class="text-[16px]">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="mobileMenu" class="w-full overflow-hidden invisible opacity-0 transition-all duration-200 ease-in-out h-[100vh] sm:hidden absolute top-full left-0 p-6 pt-10">
+            <ul class="mb-10">
+                <li class="mb-4"><a href="#" class="w-full p-2 px-4 flex text-md [font-family:var(--figtree)]">Home</a>
+                </li>
+                <li class="mb-4"><a href="#" class="w-full p-2 px-4 flex text-md [font-family:var(--figtree)]">About</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="w-full p-2 px-4 flex text-md [font-family:var(--figtree)]">Services</a></li>
+                <li><a href="#" class="w-full p-2 px-4 flex text-md [font-family:var(--figtree)]">Contact</a></li>
+            </ul>
+            <div>
+                <button class="rounded-3xl bg-(--primary) px-4 py-2">
+                    <a href="#" class="text-white font-semibold [font-family:var(--figtree)]">Book Appointment</a>
+                </button>
+            </div>
+        </div>
+        <div class="hidden sm:block">
+            <button class="rounded-3xl bg-(--primary) px-4 py-2">
+                <a href="#" class="text-white font-semibold [font-family:var(--figtree)]">Book Appointment</a>
+            </button>
+        </div>
+        <div id="hamburger" class="border border-(--primary) text-2xl rounded-[50%] sm:hidden flex items-center p-2">
+            <iconify-icon class="icon equals text-(--primary)" icon="hugeicons:equal-sign"></iconify-icon>
+            <iconify-icon class="icon times text-(--primary) hidden" icon="uil:times"></iconify-icon>
+        </div>
+    </nav>
+</body>
+
+</html>
