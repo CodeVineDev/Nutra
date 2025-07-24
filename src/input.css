@@ -17,3 +17,7 @@
   color: #666666;
   visibility: visible;
 }
+.fade-in.visible {
+  @apply opacity-100 translate-y-0;
+}
+
