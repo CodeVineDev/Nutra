@@ -16,8 +16,10 @@
     --color-sky-50: oklch(97.7% 0.013 236.62);
     --color-rose-50: oklch(96.9% 0.015 12.422);
     --color-rose-100: oklch(94.1% 0.03 12.58);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -26,7 +28,6 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -225,9 +226,6 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
-  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -258,17 +256,8 @@
   .aspect-\[16\/9\] {
     aspect-ratio: 16/9;
   }
-  .aspect-\[19\/9\] {
-    aspect-ratio: 19/9;
-  }
-  .aspect-\[19\] {
-    aspect-ratio: 19;
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-15 {
     height: calc(var(--spacing) * 15);
@@ -285,17 +274,11 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-15 {
     width: calc(var(--spacing) * 15);
   }
   .w-\[min\(97\%\,1210px\)\] {
     width: min(97%, 1210px);
-  }
-  .w-\[min\(100\%\,450px\)\] {
-    width: min(100%, 450px);
   }
   .w-\[min\(100\%\,500px\)\] {
     width: min(100%, 500px);
@@ -365,11 +348,14 @@
   .border-\(--primary\) {
     border-color: var(--primary);
   }
-  .border-gray-100 {
-    border-color: var(--color-gray-100);
+  .border-gray-50 {
+    border-color: var(--color-gray-50);
   }
   .border-gray-200 {
     border-color: var(--color-gray-200);
+  }
+  .border-gray-800 {
+    border-color: var(--color-gray-800);
   }
   .border-b-gray-200 {
     border-bottom-color: var(--color-gray-200);
@@ -377,32 +363,11 @@
   .bg-\(--primary\) {
     background-color: var(--primary);
   }
-  .bg-amber-100 {
-    background-color: var(--color-amber-100);
-  }
-  .bg-cyan-50 {
-    background-color: var(--color-cyan-50);
-  }
-  .bg-emerald-50 {
-    background-color: var(--color-emerald-50);
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
-  }
-  .bg-gray-200 {
-    background-color: var(--color-gray-200);
-  }
-  .bg-orange-50 {
-    background-color: var(--color-orange-50);
-  }
-  .bg-orange-100 {
-    background-color: var(--color-orange-100);
-  }
-  .bg-rose-50 {
-    background-color: var(--color-rose-50);
-  }
-  .bg-rose-100 {
-    background-color: var(--color-rose-100);
   }
   .bg-sky-50 {
     background-color: var(--color-sky-50);
@@ -437,12 +402,6 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -473,17 +432,14 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-22 {
     padding-block: calc(var(--spacing) * 22);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
-  }
-  .pt-22 {
-    padding-top: calc(var(--spacing) * 22);
-  }
-  .pb-5 {
-    padding-bottom: calc(var(--spacing) * 5);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -501,22 +457,12 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[12px\] {
-    font-size: 12px;
-  }
   .text-\[13px\] {
     font-size: 13px;
-  }
-  .text-\[14px\] {
-    font-size: 14px;
   }
   .text-\[16px\] {
     font-size: 16px;
@@ -598,16 +544,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .\*\:mt-10 {
-    :is(& > *) {
-      margin-top: calc(var(--spacing) * 10);
-    }
-  }
-  .\*\:pb-10 {
-    :is(& > *) {
-      padding-bottom: calc(var(--spacing) * 10);
-    }
   }
   .after\:transition-all {
     &::after {
