@@ -231,6 +231,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-10 {
+    z-index: 10;
+  }
   .m-auto {
     margin: auto;
   }
@@ -514,6 +517,9 @@
   }
   .border-b-gray-200 {
     border-bottom-color: var(--color-gray-200);
+  }
+  .border-b-gray-300 {
+    border-bottom-color: var(--color-gray-300);
   }
   .border-l-gray-200 {
     border-left-color: var(--color-gray-200);
@@ -1002,6 +1008,12 @@
   .sm\:h-140 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 140);
+    }
+  }
+  .sm\:border-r {
+    @media (width >= 40rem) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
     }
   }
   .sm\:p-8 {
